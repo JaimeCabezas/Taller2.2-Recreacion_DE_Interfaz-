@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="Layout">
+        <main class="Layout-main">
+
+            <!-- CABECERA -->
+            <header class="header">
+                <figure class="header_logo">
+                    <i class="fa-solid fa-language logo_icon"></i>
+                </figure>
+                <nav class="header_nav">
+                    <a href="#" class="nav_link">Traductor</a>
+                </nav>
+            </header>
+
+            <!-- BUSCADOR -->
+            <section class="search">
+                <form class="search_box" action="#" method="get">
+                    <input type="text" name="word" class="search_input" placeholder="Introduce una palabra">
+                    <button type="submit" class="search_button" aria-label="Buscar">
+                        <i class="fa-solid fa-magnifying-glass button_icon"></i>
+                    </button>
+                </form>
+                <select name="language" class="search_select">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                </select>
+            </section>
+
+            <!-- PALABRA BUSCADA -->
+            <section class="word">
+                <h1 class="word_title">Ordenador</h1>
+                <button class="word_button" aria-label="Escuchar pronunciación">
+                    <i class="fa-solid fa-play button_play"></i>
+                </button>
+            </section>
+
+            <!-- TRADUCCION -->
+            <section class="translation">
+                <h2 class="translation_title">Traduccion</h2>
+
+                <ul class="translation_list">
+                    <li class="list_item">
+                        <span class="item_word">Ordenador</span>: Máquina electrónica capaz de
+                        almacenar información y tratarla automáticamente mediante operaciones
+                        matemáticas y lógicas controladas por programas informáticos
+                    </li>
+                    <li class="list_item">
+                        <span class="item_word">Ordenador compatible</span> Ordenador capaz de
+                        ejecutar los mismos programas que otros ordenadores del mismo tipo.
+                    </li>
+                    <li class="list_item">
+                        <span class="item_word">Ordenador personal</span>: Ordenador de sobremesa
+                        que incluye unidad central, teclado, pantalla y una o más unidades de disco
+                        y que puede funcionar sin estar conectado a una red informática.
+                    </li>
+                    <li class="list_item">
+                        <span class="item_word">Ordenador portátil</span>: Ordenador personal de
+                        peso y tamaño tan reducidos que se puede llevar cómodamente de un lado a
+                        otro, como si fuera un maletín; una batería incorporada le permite cierta
+                        autonomía de funcionamiento.
+                    </li>
+                </ul>
+
+                <!-- SINONIMOS -->
+                <div class="synonyms">
+                    <span class="synonyms_label">Sinonimos:</span>
+                    <a href="#" class="synonyms_link">Computador</a>
+                    <a href="#" class="synonyms_link">Procesadora</a>
+                    <a href="#" class="synonyms_link">Computadora</a>
+                </div>
+            </section>
+
+            <!-- PIE DE PAGINA -->
+            <footer class="footer">
+                <p class="footer_text">Todos los derechos revervados a Victor Robles &copy;</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>
