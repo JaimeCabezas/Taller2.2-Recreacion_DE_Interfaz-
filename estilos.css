@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1.5rem 1rem;
+}
+
+.Layout-main {
+    width: 38rem;
+}
+
+/* CABECERA */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #1a73e8;
+    border-radius: 0.25rem;
+}
+
+.logo_icon {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav_link {
+    color: #1a73e8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+/* BUSCADOR */
+
+.search {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+.search_box {
+    flex: 1; /* Ocupa el espacio que deja libre el select */
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 0 1.1rem;
+}
+
+.search_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 0.95rem;
+    color: #202124;
+    text-align: center;
+}
+
+.search_input::placeholder {
+    color: #5f6368;
+}
+
+.search_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.button_icon {
+    color: #202124;
+    font-size: 1.05rem;
+}
+
+.search_select {
+    width: 9.5rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: #f1f3f4;
+    padding: 0 1.1rem;
+    font-size: 0.95rem;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* PALABRA BUSCADA */
+
+.word {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.word_title {
+    font-size: 3rem;
+    color: #202124;
+}
+
+.word_button {
+    width: 3.9rem;
+    height: 3.9rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #1a8cff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word_button:hover {
+    background-color: #0b78e3;
+}
+
+.button_play {
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 0.2rem; /* Centra ópticamente el triangulo */
+}
+
+/* TRADUCCION */
+
+.translation_title {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 1.2rem;
+    color: #3c4043;
+    padding-bottom: 2.5rem;
+}
+
+.translation_title::before,
+.translation_title::after {
+    content: ""; /* Lineas grises a los lados del titulo */
+    flex: 1;
+    height: 1px;
+    background-color: #dadce0;
+}
+
+.translation_list {
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+
+.list_item {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 1.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #3c4043;
+}
+
+.list_item::before {
+    content: "\f111"; /* Circulo solido de Font Awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0.45rem;
+    left: 0;
+    color: #1a73e8;
+    font-size: 0.35rem;
+}
+
+.item_word {
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* SINONIMOS */
+
+.synonyms {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #dadce0;
+}
+
+.synonyms_label {
+    font-size: 0.95rem;
+    color: #5f6368;
+}
+
+.synonyms_link {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.synonyms_link:hover {
+    text-decoration: underline;
+}
+
+/* PIE DE PAGINA */
+
+.footer {
+    padding-top: 1rem;
+}
+
+.footer_text {
+    font-size: 0.8rem;
+    color: #9aa0a6;
+}
